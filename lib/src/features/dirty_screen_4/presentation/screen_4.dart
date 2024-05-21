@@ -1,26 +1,33 @@
 import 'package:flutter/material.dart';
 
-class Boxtitle extends StatelessWidget {
-  const Boxtitle({super.key, required this.title});
+class Screen4 extends StatelessWidget {
+  const Screen4(
+      {super.key,
+      required this.color,
+      required this.icon,
+      required this.title});
 
+  final Color color;
+  final Icon icon;
   final String title;
+
   @override
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(12), color: Colors.greenAccent),
+        borderRadius: BorderRadius.circular(12),
+        color: color,
+      ),
       margin: const EdgeInsets.all(4),
       padding: const EdgeInsets.all(16.0),
       child: Row(
         children: [
-          const Icon(Icons.eco),
-          const SizedBox(
-            width: 8,
-          ),
+          icon,
+          const SizedBox(width: 8),
           Text(
-            'Box $title',
+            title,
             style: const TextStyle(fontSize: 20, color: Colors.white),
-          )
+          ),
         ],
       ),
     );

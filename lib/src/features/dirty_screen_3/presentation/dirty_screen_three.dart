@@ -1,4 +1,4 @@
-import 'package:dirty_code/src/features/dirty_screen_3/presentation/alert_text.dart';
+import 'package:dirty_code/src/features/dirty_screen_3/presentation/screen_3.dart';
 import 'package:flutter/material.dart';
 
 class DirtyScreenThree extends StatelessWidget {
@@ -13,10 +13,10 @@ class DirtyScreenThree extends StatelessWidget {
         scrollDirection: Axis.vertical,
         child: Column(
           children: [
-            AlertText(number: '1'),
-            AlertText(number: '2'),
-            AlertText(number: '3'),
-            AlertText(number: '4'),
+            Screen3(number: '1'),
+            Screen3(number: '2'),
+            Screen3(number: '3'),
+            Screen3(number: '4'),
           ],
         ),
       ),

@@ -1,4 +1,4 @@
-import 'package:dirty_code/src/features/dirty_screen_5/presentation/container_design.dart';
+import 'package:dirty_code/src/features/dirty_screen_5/presentation/screen_5.dart';
 import 'package:flutter/material.dart';
 
 class DirtyScreenFive extends StatelessWidget {
@@ -13,10 +13,10 @@ class DirtyScreenFive extends StatelessWidget {
         scrollDirection: Axis.vertical,
         child: Column(
           children: [
-            ContainerDesign(color: Colors.red, numbertitle: '1'),
-            ContainerDesign(color: Colors.pink, numbertitle: '2'),
-            ContainerDesign(color: Colors.purple, numbertitle: '3'),
-            ContainerDesign(color: Colors.deepPurple, numbertitle: '4'),
+            Screen5(color: Colors.red, numbertitle: '1'),
+            Screen5(color: Colors.pink, numbertitle: '2'),
+            Screen5(color: Colors.purple, numbertitle: '3'),
+            Screen5(color: Colors.deepPurple, numbertitle: '4'),
           ],
         ),
       ),

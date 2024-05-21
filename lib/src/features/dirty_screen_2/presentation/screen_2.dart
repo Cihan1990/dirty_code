@@ -1,24 +1,24 @@
 import 'package:flutter/material.dart';
 
-class AlertText extends StatelessWidget {
-  const AlertText({super.key, required this.number});
+class Screen2 extends StatelessWidget {
+  const Screen2({super.key, required this.title});
 
-  final String number;
+  final String title;
   @override
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(12), color: Colors.orangeAccent),
+          borderRadius: BorderRadius.circular(12), color: Colors.greenAccent),
       margin: const EdgeInsets.all(4),
       padding: const EdgeInsets.all(16.0),
       child: Row(
         children: [
-          const Icon(Icons.warning),
+          const Icon(Icons.eco),
           const SizedBox(
             width: 8,
           ),
           Text(
-            'Alert $number',
+            'Box $title',
             style: const TextStyle(fontSize: 20, color: Colors.white),
           )
         ],

@@ -1,4 +1,4 @@
-import 'package:dirty_code/src/features/dirty_screen_2/presentation/box_title.dart';
+import 'package:dirty_code/src/features/dirty_screen_2/presentation/screen_2.dart';
 import 'package:flutter/material.dart';
 
 class DirtyScreenTwo extends StatelessWidget {
@@ -13,10 +13,10 @@ class DirtyScreenTwo extends StatelessWidget {
         scrollDirection: Axis.vertical,
         child: Column(
           children: [
-            Boxtitle(title: 'A'),
-            Boxtitle(title: 'B'),
-            Boxtitle(title: 'C'),
-            Boxtitle(title: 'D'),
+            Screen2(title: 'A'),
+            Screen2(title: 'B'),
+            Screen2(title: 'C'),
+            Screen2(title: 'D'),
           ],
         ),
       ),

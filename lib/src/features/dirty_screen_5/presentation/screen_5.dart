@@ -1,16 +1,11 @@
 import 'package:flutter/material.dart';
 
-class ContainerSymbol extends StatelessWidget {
-  const ContainerSymbol(
-      {super.key,
-      required this.color,
-      required this.icon,
-      required this.title});
+class Screen5 extends StatelessWidget {
+  const Screen5(
+      {super.key, required this.color, required this.numbertitle});
 
   final Color color;
-  final Icon icon;
-  final String title;
-
+  final String numbertitle;
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -22,10 +17,10 @@ class ContainerSymbol extends StatelessWidget {
       padding: const EdgeInsets.all(16.0),
       child: Row(
         children: [
-          icon,
+          const Icon(Icons.favorite, color: Colors.white),
           const SizedBox(width: 8),
           Text(
-            title,
+            'Favorite $numbertitle',
             style: const TextStyle(fontSize: 20, color: Colors.white),
           ),
         ],
